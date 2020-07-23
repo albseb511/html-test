@@ -1,6 +1,8 @@
 ### coding
 
-create an html page with  the following
+create an html page with  the following:
+
+use src/index.html to make modifications for this
 
 - h3 tag with Counter as heading 
 - two buttons with id add, reduce with text ADD, REDUCE respectively
