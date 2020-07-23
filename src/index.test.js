@@ -25,13 +25,13 @@ describe('index.html', () => {
       expect(getByText(container, 'Counter')).toBeInTheDocument()
     })
   
-    it('renders an ADD button element', () => {
+    it('renders an button elements', () => {
       expect(container.querySelector('#add')).not.toBeNull()
       expect(container.querySelector('#reduce')).not.toBeNull()
       expect(container.querySelectorAll('button').length).toBe(2)
     })
     
-    it('renders an ADD button element', () => {
+    it('renders an ADD, REDUCE element', () => {
         expect(getByText(container, 'ADD')).toBeInTheDocument()
         expect(getByText(container, 'REDUCE')).toBeInTheDocument()
     })
@@ -41,7 +41,7 @@ describe('index.html', () => {
         expect( container.querySelector('#count').toBe(1) )
     })
   
-    it('Adds 1 via JavaScript when the button is clicked', async () => {
+    it('Adds 1 and Reduces 1 via JavaScript when the respective button is clicked', async () => {
       const add = getByText(container, 'ADD')
       const reduce = getByText(container, 'REDUCE')
 
